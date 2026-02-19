@@ -37,24 +37,6 @@ This workshop contains 3 exercises that cover the essential Git workflow:
 #### Icons with special meaning
 
 :pencil2: - A task you should do  
-:book: - A section of text to read (no tasks, just information).  
 :bulb: - Additional information.  
 :exclamation: - Something important.  
-:question: - Open-ended question for the reader ("What do you think would happen if...")  
-:poop: - Bad practice (don't-do-this)  
-:star: - A bonus task (not required)  
 
-#### Keyboard keys
-
-Will look like this:
-
-<kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>C</kbd>
-
-#### Diff blocks
-
-Emphasizes how lines of text should change.
-
-```diff
-- this text was removed
-+ and replaced with this text
-```
