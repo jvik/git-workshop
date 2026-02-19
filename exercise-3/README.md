@@ -1,50 +1,50 @@
-# Exercise 3 - Pull Requests on GitHub
+# Øvelse 3 - Pull Requests på GitHub
 
-## :bulb: Goal
+## :bulb: Mål
 
-Learn to create Pull Requests (PRs), review code, and merge changes on GitHub.
+Lær å opprette Pull Requests (PRs), gjennomgå kode og merge endringer på GitHub.
 
-## 3.1 - Create a Pull Request
+## 3.1 - Opprett en Pull Request
 
-:pencil2: Create a new branch with a name of your choice:
+:pencil2: Opprett en ny branch med et navn du velger selv:
 
 ```shell
 git checkout -b my-new-feature
 ```
 
-:pencil2: Create or modify a file, then commit it:
+:pencil2: Opprett eller endre en fil, og commit den:
 
 ```shell
 git add .
 git commit -m "Add new feature"
 ```
 
-:pencil2: Push your branch to GitHub:
+:pencil2: Push branchen din til GitHub:
 
 ```shell
 git push --set-upstream origin my-new-feature
 ```
 
-:bulb: After pushing, you'll get a link in your terminal to create a PR. Alternatively, go to your repository on GitHub and click the green "Compare & pull request" button.
+:bulb: Etter push vil du få en link i terminalen for å opprette en PR. Alternativt, gå til repositoriet ditt på GitHub og klikk på den grønne "Compare & pull request"-knappen.
 
-:pencil2: Fill in the PR form with a title and description explaining your changes. Click "Create pull request".
+:pencil2: Fyll ut PR-skjemaet med en tittel og beskrivelse som forklarer endringene dine. Klikk "Create pull request".
 
-## 3.2 - Review and Merge
+## 3.2 - Gjennomgang og Merge
 
-:pencil2: Explore the PR interface:
-- Go to the **Files changed** tab to see your changes
-- Click the `+` icon next to a line number to add a comment
-- Write a comment and submit your review
+:pencil2: Utforsk PR-grensesnittet:
+- Gå til **Files changed**-fanen for å se endringene dine
+- Klikk på `+`-ikonet ved siden av et linjenummer for å legge til en kommentar
+- Skriv en kommentar og send inn gjennomgangen din
 
-:bulb: In a real project, someone else would review your PR. For practice, you can review your own.
+:bulb: I et ekte prosjekt ville noen andre gjennomgått din PR. For øvelsens skyld kan du gjennomgå din egen.
 
-:pencil2: Go to the **Conversation** tab and scroll to the bottom. Click the green **"Merge pull request"** button, then **"Confirm merge"**.
+:pencil2: Gå til **Conversation**-fanen og scroll ned til bunnen. Klikk på den grønne **"Merge pull request"**-knappen, og så **"Confirm merge"**.
 
-:bulb: After merging, GitHub will offer to delete the branch. It's good practice to delete merged branches to keep your repository clean.
+:bulb: Etter merging vil GitHub tilby å slette branchen. Det er god praksis å slette mergede branches for å holde repositoriet ryddig.
 
-:pencil2: Delete the branch on GitHub by clicking the "Delete branch" button.
+:pencil2: Slett branchen på GitHub ved å klikke på "Delete branch"-knappen.
 
-:pencil2: Pull the changes to your local `main` branch and delete the local feature branch:
+:pencil2: Pull endringene til din lokale `main` branch og slett den lokale feature branchen:
 
 ```shell
 git checkout main
@@ -54,13 +54,13 @@ git branch -d my-new-feature
 
 ---
 
-**Gratulerer! 🎉 You've completed the Git workshop!**
+**Gratulerer! 🎉 Du har fullført Git-workshopen!**
 
-You now know how to:
-- Set up Git and configure it
-- Create repositories locally and on GitHub
-- Make commits and push changes  
-- Work with branches and resolve merge conflicts
-- Create and merge Pull Requests
+Du kan nå:
+- Sette opp Git og konfigurere det
+- Opprette repositories lokalt og på GitHub
+- Lage commits og pushe endringer
+- Jobbe med branches og løse merge-konflikter
+- Opprette og merge Pull Requests
 
-Keep practicing these skills in your projects!
+Fortsett å øve på disse ferdighetene i prosjektene dine!

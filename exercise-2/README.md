@@ -1,18 +1,18 @@
-# Exercise 2 - Branches and Merging
+# Øvelse 2 - Branches og Merging
 
-## :bulb: Goal
+## :bulb: Mål
 
-Learn to create branches, merge changes, and resolve conflicts.
+Lær å opprette branches, merge endringer og løse konflikter.
 
-## 2.1 - Create a Branch
+## 2.1 - Opprett en Branch
 
-:pencil2: Check you're on `main` (`git branch`) then create a new branch:
+:pencil2: Sjekk at du er på `main` (`git branch`) og opprett en ny branch:
 
 ```shell
 git checkout -b feature-branch-1
 ```
 
-:pencil2: Create a file `index.ps1` with this content:
+:pencil2: Opprett en fil `index.ps1` med dette innholdet:
 
 ```powershell
 function Invoke-Greeting {
@@ -24,55 +24,51 @@ function Invoke-Greeting {
 Invoke-Greeting -Name "World"
 ```
 
-:pencil2: Commit the file:
+:pencil2: Commit filen:
 
 ```shell
 git add index.ps1
 git commit -m "Add greeting function"
 ```
 
-## 2.2 - Merge to Main
+## 2.2 - Merge til Main
 
-:pencil2: Switch to `main` and merge your feature branch:
+:pencil2: Bytt til `main` og merge feature branchen din:
 
 ```shell
 git checkout main
 git merge feature-branch-1
 ```
 
-An editor will open for the merge commit message. Save and close to complete the merge.
+En editor vil åpnes for merge commit-meldingen. Lagre og lukk for å fullføre mergen.
 
-## 2.3 - Handle a Merge Conflict
+## 2.3 - Håndter en Merge Conflict
 
-:bulb: When multiple people work on the same files, conflicts can occur. Let's practice resolving them.
+:bulb: Når flere personer jobber på de samme filene, kan konflikter oppstå. La oss øve på å løse dem.
 
-## 2.3 - Handle a Merge Conflict
+:pencil2: Opprett branch `feature-branch-2` fra `main`. Erstatt innholdet i `index.ps1` med koden fra `code/2.3-change-1.ps1` i dette repositoriet. Commit den.
 
-:bulb: When multiple people work on the same files, conflicts can occur. Let's practice resolving them.
+:pencil2: Sjekk ut `main`, og opprett deretter `feature-branch-3`. Erstatt `index.ps1` med kode fra `code/2.3-change-2.ps1`. Commit den.
 
-:pencil2: Create branch `feature-branch-2` from `main`. Replace `index.ps1` contents with the code from `code/2.3-change-1.ps1` in this repo. Commit it.
+:pencil2: Merge `feature-branch-2` inn i `main`, og prøv deretter å merge `feature-branch-3` inn i `main`.
 
-:pencil2: Check out `main`, then create `feature-branch-3`. Replace `index.ps1` with code from `code/2.3-change-2.ps1`. Commit it.
+:bulb: Du vil se en konflikt! I VS Code, gå til Source Control-fanen, finn filen under "Merge Changes", og klikk **"Resolve in Merge Editor"**.
 
-:pencil2: Merge `feature-branch-2` into `main`, then try merging `feature-branch-3` into `main`.
+:bulb: Du vil se tre vinduer:
+- **Incoming**: Endringer fra branchen som merges
+- **Current**: Nåværende innhold i `main`
+- **Result**: Hvordan den endelige mergen vil se ut
 
-:bulb: You'll see a conflict! In VS Code, go to Source Control tab, find the file under "Merge Changes", and click **"Resolve in Merge Editor"**.
+:pencil2: Velg hvilke endringer du vil beholde ved å klikke "Accept Incoming", "Accept Current" eller "Accept Both". Klikk "Complete Merge".
 
-:bulb: You'll see three windows:
-- **Incoming**: Changes from the branch being merged
-- **Current**: Current content in `main`
-- **Result**: What the final merge will look like
-
-:pencil2: Choose which changes to keep by clicking "Accept Incoming", "Accept Current", or "Accept Both". Click "Complete Merge".
-
-:pencil2: Complete the merge in terminal:
+:pencil2: Fullfør mergen i terminalen:
 
 ```shell
 git add index.ps1
 git commit -m "Resolve merge conflict"
 ```
 
-:pencil2: Push to GitHub:
+:pencil2: Push til GitHub:
 
 ```shell
 git push
@@ -80,4 +76,4 @@ git push
 
 ---
 
-[:arrow_right: Go to the next exercise](../exercise-3/README.md)
+[:arrow_right: Gå til neste øvelse](../exercise-3/README.md)

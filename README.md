@@ -1,42 +1,42 @@
-# Introduction to Version Control with Git
+# Introduksjon til versjonskontroll med Git
 
-Git is an essential tool in a developer's toolbox, widely regarded as the most popular version control system. Understanding how to use Git effectively is crucial for tracking changes in files, improving productivity, and collaborating efficiently with others.
+Git er et essensielt verktøy i en utviklers verktøykasse, og er ansett som det mest populære versjonskontrollsystemet. Å forstå hvordan man bruker Git effektivt er avgjørende for å spore endringer i filer, forbedre produktivitet og samarbeide effektivt med andre.
 
-This is a compact 1-hour workshop covering the fundamentals of Git. You will learn how to set up Git, create repositories, make commits, and work with Pull Requests on GitHub.
+Dette er en kompakt 1-times workshop som dekker det grunnleggende i Git. Du vil lære hvordan du setter opp Git, oppretter repositories, lager commits og jobber med Pull Requests på GitHub.
 
-## Prerequisites
+## Forutsetninger
 
 ### Git
 
-Ensure that Git is installed on your machine and accessible from the command line/terminal.  
-If you already have Git installed, you can skip this step. On Windows, check if you have `git bash` installed. If you are on macOS or Linux, you can check if Git is available by typing `git version`.
+Sørg for at Git er installert på maskinen din og er tilgjengelig fra kommandolinjen/terminal.  
+Hvis du allerede har Git installert, kan du hoppe over dette steget. På Windows, sjekk om du har `git bash` installert. Hvis du er på macOS eller Linux, kan du sjekke om Git er tilgjengelig ved å skrive `git version`.
 
-If Git is not installed, you can find instructions for installing it on all operating systems here: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+Hvis Git ikke er installert, kan du finne instruksjoner for å installere det på alle operativsystemer her: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 
 ### Editor
 
-You are free to use the code editor of your choice, but we highly recommend [Visual Studio Code](https://code.visualstudio.com/).
+Du står fritt til å bruke kode-editoren du foretrekker, men vi anbefaler sterkt [Visual Studio Code](https://code.visualstudio.com/).
 
-## How to get started
+## Hvordan komme i gang
 
-- Even though you have this file (`README.md`) on your local machine if you have cloned the repository, it is easier to read on GitHub due to formatting. We therefore recommend using a browser to read the exercises.
-- Start with Exercise 1, and feel free to ask if anything is unclear or if there is something you would like to discuss.
+- Selv om du har denne filen (`README.md`) på din lokale maskin hvis du har klonet repositoriet, er det enklere å lese på GitHub på grunn av formatering. Vi anbefaler derfor å bruke en nettleser for å lese øvelsene.
+- Start med Øvelse 1, og spør gjerne hvis noe er uklart eller hvis det er noe du ønsker å diskutere.
 
-:exclamation: We will not use the GUI client in this workshop. Instead, we will use the terminal/command line (CLI). It is a good idea to avoid copy-pasting commands to get used to typing Git commands, even though it may feel inconvenient at first. Once you get the hang of it, using the CLI tool becomes an efficient way to work.
+:exclamation: Vi vil ikke bruke GUI-klienten i denne workshopen. I stedet vil vi bruke terminal/kommandolinjen (CLI). Det er en god idé å unngå å kopiere og lime inn kommandoer for å bli vant til å skrive Git-kommandoer, selv om det kan føles upraktisk i begynnelsen. Når du får taket på det, blir bruk av CLI-verktøyet en effektiv måte å jobbe på.
 
-## Exercises
+## Øvelser
 
-This workshop contains 3 exercises that cover the essential Git workflow:
+Denne workshopen inneholder 3 øvelser som dekker den essensielle Git-arbeidsflyten:
 
-- [Exercise 1 - Setup and First Commit](exercise-1/README.md) - Configure Git, create a repository, and make your first commit
-- [Exercise 2 - Branches and Merging](exercise-2/README.md) - Work with branches and merge changes
-- [Exercise 3 - Pull Requests on GitHub](exercise-3/README.md) - Create and merge Pull Requests
+- [Øvelse 1 - Oppsett og første Commit](exercise-1/README.md) - Konfigurer Git, opprett et repository og lag din første commit
+- [Øvelse 2 - Branches og Merging](exercise-2/README.md) - Jobb med branches og merge endringer
+- [Øvelse 3 - Pull Requests på GitHub](exercise-3/README.md) - Opprett og merge Pull Requests
 
-### Symbols and notation used in the exercises
+### Symboler og notasjon brukt i øvelsene
 
-#### Icons with special meaning
+#### Ikoner med spesiell betydning
 
-:pencil2: - A task you should do  
-:bulb: - Additional information.  
-:exclamation: - Something important.  
+:pencil2: - En oppgave du skal gjøre  
+:bulb: - Tilleggsinformasjon.  
+:exclamation: - Noe viktig.  
 

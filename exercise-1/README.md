@@ -1,102 +1,102 @@
-# Exercise 1 - Setup and First Commit
+# Øvelse 1 - Oppsett og første Commit
 
-## :bulb: Goal
+## :bulb: Mål
 
-Learn to configure Git, create a repository, make commits, and push to GitHub.
+Lær å konfigurere Git, opprette et repository, lage commits og pushe til GitHub.
 
-## 1.1 - Configuring Git
+## 1.1 - Konfigurere Git
 
-:bulb: Skip this if you've already configured Git. Check with: `git config --global user.name` and `git config --global user.email`
+:bulb: Hopp over dette hvis du allerede har konfigurert Git. Sjekk med: `git config --global user.name` og `git config --global user.email`
 
-:pencil2: Set your name and email:
+:pencil2: Sett ditt navn og e-post:
 
 ```shell
-git config --global user.name "Your Name"
-git config --global user.email your.name@email.com
+git config --global user.name "Ditt Navn"
+git config --global user.email ditt.navn@epost.com
 ```
 
-### 1.1.1 - Configure the default editor (optional)
+### 1.1.1 - Konfigurer standard editor (valgfritt)
 
-:pencil2: To use VS Code as your Git editor:
+:pencil2: For å bruke VS Code som din Git editor:
 
 ```shell
 git config --global core.editor "code --wait"
 ```
 
-## 1.2 - Create a git repository
+## 1.2 - Opprett et git repository
 
-:pencil2: Create a new directory called `git-workshop-files` and navigate to it in your terminal:
+:pencil2: Opprett en ny mappe kalt `git-workshop-files` og naviger til den i terminalen din:
 
 ```shell
 mkdir git-workshop-files
 cd git-workshop-files
 ```
 
-:bulb: **Tip**: Open VS Code from your terminal with `code .`
+:bulb: **Tips**: Åpne VS Code fra terminalen med `code .`
 
-:pencil2: Initialize a git repository:
+:pencil2: Initialiser et git repository:
 
 ```shell
 git init
 ```
 
-You'll see: `Initialized empty Git repository in /[path]/git-workshop-files/.git/`
+Du vil se: `Initialized empty Git repository in /[path]/git-workshop-files/.git/`
 
-## 1.3 - First commit
+## 1.3 - Første commit
 
-:pencil2: Create a file called `README.md` with some text (e.g., `"Git Workshop"`).
+:pencil2: Opprett en fil kalt `README.md` med litt tekst (f.eks. `"Git Workshop"`).
 
-:pencil2: Check the status:
+:pencil2: Sjekk statusen:
 
 ```shell
 git status
 ```
 
-You'll see `README.md` under `Untracked files`.
+Du vil se `README.md` under `Untracked files`.
 
-:pencil2: Add the file to the staging area:
+:pencil2: Legg filen til staging area:
 
 ```shell
 git add README.md
 ```
 
-:pencil2: Create a commit:
+:pencil2: Opprett en commit:
 
 ```shell
 git commit -m "Initial commit"
 ```
 
-:pencil2: View your commit history:
+:pencil2: Se commit-historikken din:
 
 ```shell
 git log
 ```
 
-Press `q` to exit.
+Trykk `q` for å avslutte.
 
-## 1.4 - Push to GitHub
+## 1.4 - Push til GitHub
 
-### 1.4.1 - Authentication Setup
+### 1.4.1 - Autentiserings-oppsett
 
-:bulb: You need to authenticate with GitHub. If you haven't set up SSH keys, follow these docs:
-- [Check for existing SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
-- [Generate SSH key and add to agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+:bulb: Du må autentisere deg med GitHub. Hvis du ikke har satt opp SSH keys, følg denne dokumentasjonen:
+- [Sjekk for eksisterende SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
+- [Generer SSH key og legg til agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
-### 1.4.2 - Create GitHub Repository
+### 1.4.2 - Opprett GitHub Repository
 
-:pencil2: Go to github.com, click your profile, then "Repositories" tab, then the green "New" button.
+:pencil2: Gå til github.com, klikk på profilen din, deretter "Repositories"-fanen, og så den grønne "New"-knappen.
 
-:pencil2: Name your repository (e.g., `git-workshop`) and click **Create repository**. Don't select any other options.
+:pencil2: Gi repositoriet et navn (f.eks. `git-workshop`) og klikk **Create repository**. Ikke velg andre alternativer.
 
-:pencil2: You'll see instructions for **"push an existing repository from the command line"**. Copy and run those commands in your terminal. They'll look like:
+:pencil2: Du vil se instruksjoner for **"push an existing repository from the command line"**. Kopier og kjør disse kommandoene i terminalen din. De vil se ut som:
 
 ```shell
-git remote add origin git@github.com:yourusername/git-workshop.git
+git remote add origin git@github.com:dinbruker/git-workshop.git
 git branch -M main
 git push -u origin main
 ```
 
-:pencil2: Your code is now on GitHub! Make a small edit to README.md on github.com (click the pencil icon), then pull the changes locally:
+:pencil2: Koden din er nå på GitHub! Gjør en liten endring i README.md på github.com (klikk på blyant-ikonet), og pull endringene lokalt:
 
 ```shell
 git pull
@@ -104,4 +104,4 @@ git pull
 
 ---
 
-[:arrow_right: Go to the next exercise](../exercise-2/README.md)
+[:arrow_right: Gå til neste øvelse](../exercise-2/README.md)
