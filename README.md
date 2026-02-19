@@ -2,9 +2,7 @@
 
 Git is an essential tool in a developer's toolbox, widely regarded as the most popular version control system. Understanding how to use Git effectively is crucial for tracking changes in files, improving productivity, and collaborating efficiently with others.
 
-In this workshop, we will cover Git in the command line, going through the basic mechanisms of versioning files. We will look at the most important commands, as well as useful tips for getting out of trouble when things go wrong. We will use Github.com to work with a repository outside of our local machine, where we will also explore the use of Pull Requests. To merge changes and resolve conflicts, we will use Visual Studio Code.
-
-[Open presentation slides](https://docs.google.com/presentation/d/1-mm0vAUIXwJF64lhLJ8REDQKqKkKi6-Y_p4mXqXpUUA/edit?usp=sharing)
+This is a compact 1-hour workshop covering the fundamentals of Git. You will learn how to set up Git, create repositories, make commits, and work with Pull Requests on GitHub.
 
 ## Prerequisites
 
@@ -28,13 +26,11 @@ You are free to use the code editor of your choice, but we highly recommend [Vis
 
 ## Exercises
 
-This repository contains a set of exercises organized in folders. Each folder contains a `README.md` describing the exercise:
+This workshop contains 3 exercises that cover the essential Git workflow:
 
-- [Exercise 1](exercise-1/README.md)
-- [Exercise 2](exercise-2/README.md)
-- [Exercise 3](exercise-3/README.md)
-- [Exercise 4](exercise-4/README.md)
-- [Exercise 5](exercise-5/README.md)
+- [Exercise 1 - Setup and First Commit](exercise-1/README.md) - Configure Git, create a repository, and make your first commit
+- [Exercise 2 - Branches and Merging](exercise-2/README.md) - Work with branches and merge changes
+- [Exercise 3 - Pull Requests on GitHub](exercise-3/README.md) - Create and merge Pull Requests
 
 ### Symbols and notation used in the exercises
 
