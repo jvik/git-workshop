@@ -38,7 +38,7 @@ Du skal se `origin` peke til din fork.
 :pencil2: Opprett en ny branch for dine endringer:
 
 ```shell
-git checkout -b add-my-contribution
+git switch -c add-my-contribution
 ```
 
 :bulb: Bruk et beskrivende branchnavn som forklarer hva du endrer.
@@ -68,8 +68,10 @@ git commit -m "Add my name to contributors"
 :pencil2: Push branchen din til din fork:
 
 ```shell
-git push --set-upstream origin add-my-contribution
+git push -u origin add-my-contribution
 ```
+
+:bulb: Flagget `-u` (upstream) forteller Git at denne lokale branchen skal tracke remote branchen. Neste gang du pusher fra denne branchen holder det med bare `git push`.
 
 :pencil2: Gå til repositoriet ditt på GitHub (din fork). Du vil se en melding med en knapp **"Compare & pull request"**. Klikk på den.
 
@@ -108,7 +110,7 @@ git fetch upstream
 :pencil2: Merge endringer inn i din lokale main branch:
 
 ```shell
-git checkout main
+git switch main
 git merge upstream/main
 ```
 

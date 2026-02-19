@@ -9,7 +9,7 @@ Lær å opprette branches, merge endringer og løse konflikter.
 :pencil2: Sjekk at du er på `main` (`git branch`) og opprett en ny branch:
 
 ```shell
-git checkout -b feature-branch-1
+git switch -c feature-branch-1
 ```
 
 :pencil2: Opprett en fil `index.ps1` med dette innholdet:
@@ -36,7 +36,7 @@ git commit -m "Add greeting function"
 :pencil2: Bytt til `main` og merge feature branchen din:
 
 ```shell
-git checkout main
+git switch main
 git merge feature-branch-1
 ```
 
@@ -48,7 +48,7 @@ En editor vil åpnes for merge commit-meldingen. Lagre og lukk for å fullføre 
 
 :pencil2: Opprett branch `feature-branch-2` fra `main`. Erstatt innholdet i `index.ps1` med koden fra `code/2.3-change-1.ps1` i dette repositoriet. Commit den.
 
-:pencil2: Sjekk ut `main`, og opprett deretter `feature-branch-3`. Erstatt `index.ps1` med kode fra `code/2.3-change-2.ps1`. Commit den.
+:pencil2: Bytt til `main`, og opprett deretter `feature-branch-3`. Erstatt `index.ps1` med kode fra `code/2.3-change-2.ps1`. Commit den.
 
 :pencil2: Merge `feature-branch-2` inn i `main`, og prøv deretter å merge `feature-branch-3` inn i `main`.
 

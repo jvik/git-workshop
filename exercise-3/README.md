@@ -9,7 +9,7 @@ Lær å opprette Pull Requests (PRs), gjennomgå kode og merge endringer på Git
 :pencil2: Opprett en ny branch med et navn du velger selv:
 
 ```shell
-git checkout -b my-new-feature
+git switch -c my-new-feature
 ```
 
 :pencil2: Opprett eller endre en fil, og commit den:
@@ -22,8 +22,10 @@ git commit -m "Add new feature"
 :pencil2: Push branchen din til GitHub:
 
 ```shell
-git push --set-upstream origin my-new-feature
+git push -u origin my-new-feature
 ```
+
+:bulb: Flagget `-u` setter opp tracking mellom din lokale branch og remote branch. Etter dette kan du bare bruke `git push` uten å spesifisere `origin` og branchnavn.
 
 :bulb: Etter push vil du få en link i terminalen for å opprette en PR. Alternativt, gå til repositoriet ditt på GitHub og klikk på den grønne "Compare & pull request"-knappen.
 
@@ -47,7 +49,7 @@ git push --set-upstream origin my-new-feature
 :pencil2: Pull endringene til din lokale `main` branch og slett den lokale feature branchen:
 
 ```shell
-git checkout main
+git switch main
 git pull
 git branch -d my-new-feature
 ```
