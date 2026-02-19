@@ -12,22 +12,22 @@ Learn to create branches, merge changes, and resolve conflicts.
 git checkout -b feature-branch-1
 ```
 
-:pencil2: Create a file `index.ts` with this content:
+:pencil2: Create a file `index.ps1` with this content:
 
-```ts
-/**
- * Function that greets a person
- * @param name Name of person
- */
-export const greeting = (name: string) => {
-  console.log(`Hello ${name}`);
-};
+```powershell
+function Invoke-Greeting {
+    param([string]$Name)
+    Write-Host "Hello $Name"
+}
+
+# Test the function
+Invoke-Greeting -Name "World"
 ```
 
 :pencil2: Commit the file:
 
 ```shell
-git add index.ts
+git add index.ps1
 git commit -m "Add greeting function"
 ```
 
@@ -50,9 +50,9 @@ An editor will open for the merge commit message. Save and close to complete the
 
 :bulb: When multiple people work on the same files, conflicts can occur. Let's practice resolving them.
 
-:pencil2: Create branch `feature-branch-2` from `main`. Replace `index.ts` contents with the code from `code/2.3-change-1.ts` in this repo. Commit it.
+:pencil2: Create branch `feature-branch-2` from `main`. Replace `index.ps1` contents with the code from `code/2.3-change-1.ps1` in this repo. Commit it.
 
-:pencil2: Check out `main`, then create `feature-branch-3`. Replace `index.ts` with code from `code/2.3-change-2.ts`. Commit it.
+:pencil2: Check out `main`, then create `feature-branch-3`. Replace `index.ps1` with code from `code/2.3-change-2.ps1`. Commit it.
 
 :pencil2: Merge `feature-branch-2` into `main`, then try merging `feature-branch-3` into `main`.
 
@@ -68,7 +68,7 @@ An editor will open for the merge commit message. Save and close to complete the
 :pencil2: Complete the merge in terminal:
 
 ```shell
-git add index.ts
+git add index.ps1
 git commit -m "Resolve merge conflict"
 ```
 
