@@ -54,13 +54,4 @@ git branch -d my-new-feature
 
 ---
 
-**Gratulerer! 🎉 Du har fullført Git-workshopen!**
-
-Du kan nå:
-- Sette opp Git og konfigurere det
-- Opprette repositories lokalt og på GitHub
-- Lage commits og pushe endringer
-- Jobbe med branches og løse merge-konflikter
-- Opprette og merge Pull Requests
-
-Fortsett å øve på disse ferdighetene i prosjektene dine!
+[:arrow_right: Gå til neste øvelse](../exercise-4/README.md)

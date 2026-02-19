@@ -26,11 +26,12 @@ Du står fritt til å bruke kode-editoren du foretrekker, men vi anbefaler sterk
 
 ## Øvelser
 
-Denne workshopen inneholder 3 øvelser som dekker den essensielle Git-arbeidsflyten:
+Denne workshopen inneholder 4 øvelser som dekker den essensielle Git-arbeidsflyten:
 
 - [Øvelse 1 - Oppsett og første Commit](exercise-1/README.md) - Konfigurer Git, opprett et repository og lag din første commit
 - [Øvelse 2 - Branches og Merging](exercise-2/README.md) - Jobb med branches og merge endringer
 - [Øvelse 3 - Pull Requests på GitHub](exercise-3/README.md) - Opprett og merge Pull Requests
+- [Øvelse 4 - Fork og bidra til eksterne Repositories](exercise-4/README.md) - Fork et eksternt repository og bidra gjennom Pull Requests
 
 ### Symboler og notasjon brukt i øvelsene
 
