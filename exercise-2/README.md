@@ -2,7 +2,7 @@
 
 ## :bulb: Mål
 
-Lær å opprette branches, merge endringer og løse konflikter.
+Lær å opprette branches og merge endringer.
 
 ## 2.1 - Opprett en Branch
 
@@ -42,37 +42,11 @@ git merge feature-branch-1
 
 En editor vil åpnes for merge commit-meldingen. Lagre og lukk for å fullføre mergen.
 
-## 2.3 - Håndter en Merge Conflict
+## 2.3 - Om Merge Conflicts
 
-:bulb: Når flere personer jobber på de samme filene, kan konflikter oppstå. La oss øve på å løse dem.
+:bulb: Når flere personer endrer de samme linjene i en fil, kan det oppstå **merge conflicts**. Git klarer ikke å avgjøre hvilken endring som skal beholdes, og ber deg om å løse konflikten manuelt.
 
-:pencil2: Opprett branch `feature-branch-2` fra `main`. Erstatt innholdet i `index.ps1` med koden fra `code/2.3-change-1.ps1` i dette repositoriet. Commit den.
-
-:pencil2: Bytt til `main`, og opprett deretter `feature-branch-3`. Erstatt `index.ps1` med kode fra `code/2.3-change-2.ps1`. Commit den.
-
-:pencil2: Merge `feature-branch-2` inn i `main`, og prøv deretter å merge `feature-branch-3` inn i `main`.
-
-:bulb: Du vil se en konflikt! I VS Code, gå til Source Control-fanen, finn filen under "Merge Changes", og klikk **"Resolve in Merge Editor"**.
-
-:bulb: Du vil se tre vinduer:
-- **Incoming**: Endringer fra branchen som merges
-- **Current**: Nåværende innhold i `main`
-- **Result**: Hvordan den endelige mergen vil se ut
-
-:pencil2: Velg hvilke endringer du vil beholde ved å klikke "Accept Incoming", "Accept Current" eller "Accept Both". Klikk "Complete Merge".
-
-:pencil2: Fullfør mergen i terminalen:
-
-```shell
-git add index.ps1
-git commit -m "Resolve merge conflict"
-```
-
-:pencil2: Push til GitHub:
-
-```shell
-git push
-```
+:bulb: Git og moderne editorer som VS Code har innebygde verktøy for å håndtere merge conflicts visuelt. Du får presentert endringene fra begge sider og kan velge hvilken versjon du vil beholde, eller kombinere dem. Når du støter på en konflikt i praksis, vil Git gi deg tydelig beskjed om hva som må løses før du kan fullføre mergen.
 
 ---
 
