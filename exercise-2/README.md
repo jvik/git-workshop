@@ -40,8 +40,6 @@ git switch main
 git merge feature-branch-1
 ```
 
-En editor vil åpnes for merge commit-meldingen. Lagre og lukk for å fullføre mergen.
-
 ## 2.3 - Om Merge Conflicts
 
 :bulb: Når flere personer endrer de samme linjene i en fil, kan det oppstå **merge conflicts**. Git klarer ikke å avgjøre hvilken endring som skal beholdes, og ber deg om å løse konflikten manuelt.
